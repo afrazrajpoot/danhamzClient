@@ -1,0 +1,209 @@
+/* font -babeas nue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+/* font - pt serif */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html, body {
+  overflow: hidden;
+  /* font-family: ; */
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* font-family: 'PT Serif', serif; */
+.clip-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 3vw 7vw; /* Adjust the values to control the triangle size */
+    border-color: transparent transparent transparent #d40774; /* Adjust the color as needed */
+    border-radius: 2px; /* Adjust the border-radius value for the right-angle corner */
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    animation: scroll infinite linear 30s; /* Adjust the duration as needed */
+  
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+canvas.react-pdf__Page__canvas {
+  margin-bottom: 2vw;
+}
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .text-bl{
+    color: #152347;
+  }
+  .bg-bl{
+    background-color: #152347;
+  }
+  .bg-am{
+    background-color: rgb(245 158 11);
+  }
+  .text-am{
+    color: rgb(245 158 11);
+  }
+  .bg_img{
+    background-image: url('../public/images/Nottingham.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .bg_img2{
+    background-image: url('../public/images/bg_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .review-item {
+    flex: 0 0 auto; /* Set the width of each review item */
+    margin-right: 2vw; /* Add margin between review items */
+  }
+  .row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-decimal{
+    list-style: disc;
+  }
+
+  #signup_container{
+    background-image: "https:///images.unsplash.com/photo-1587614382346-4ec70e388b28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D";
+  }
+
+  /* YourComponent.css or in your styled-components */
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* remove the inc dec titda of input type number */
+.spin-button-none::-webkit-outer-spin-button,
+.spin-button-none::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+  
+@media (min-width: 1366px) and (max-width: 6500px) {
+    .main_container {
+        /* max-width: 1366px; */
+        width: 100%;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+}
+@media (max-width: 1366px) {}
+@media (max-width: 768px) {
+  .video-wrapper {
+    height: 20vh; 
+  }
+}
+
+/* CSS */
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* hop font-style */
+/* font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; */
+
+
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* 40% of the viewport height */
+  overflow: hidden;
+}
+
+.video-wrapper .react-player__preview,
+.video-wrapper .react-player__container {
+  height: 100%;
+}
+
+.video-wrapper video {
+  object-fit: cover; /* Ensures the video covers the container */
+}
+
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  filter: blur(5px);
+  position: relative;
+}
+
+.pulse-animation {
+  width: 80%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.1);
+  animation: pulse 1.5s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

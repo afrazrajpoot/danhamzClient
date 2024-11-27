@@ -1,0 +1,18 @@
+{
+  "short_name": "Danhamz",
+  "name": "Danhamz",
+  "icons": [
+    {
+      "src": "/images/danhamz_logo.jpg",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/danhamz_logo.jpg",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
